@@ -1,8 +1,10 @@
 name: Qiskitenv
 dependencies:
+- pip>=20.2.2
 - python>=3.6
 - matplotlib<3.3
 - notebook
 - ipywidgets
 - pip:
   - qiskit
+  - qiskit_textbook

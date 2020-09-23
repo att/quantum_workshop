@@ -61,17 +61,10 @@
    "source": [
     "In the previous section we looked at all the possible states a qubit could be in. We saw that qubits could be represented by 2D vectors, and that their states are limited to the form:\n",
     "\n",
-    "<span style=\"font-size:20px\">$$ |\\Psi\\rangle = \\cos{(\\tfrac{\\theta}{2})}|0\\rangle + e^{i\\phi}\\sin{\\tfrac{\\theta}{2}}|1\\rangle $$</span>\n",
+    "$$ |q\\rangle = \\cos{(\\tfrac{\\theta}{2})}|0\\rangle + e^{i\\phi}\\sin{\\tfrac{\\theta}{2}}|1\\rangle $$\n",
     "\n",
-    "![Bloch Sphere](images/blochsphere.jpeg)\n",
+    "Where $\\theta$ and $\\phi$ are real numbers. In this section we will cover _gates,_ the operations that change a qubit between these states. Due to the number of gates and the similarities between them, this chapter is at risk of becoming a list. To counter this, we have included a few digressions to introduce important ideas at appropriate places throughout the chapter. \n",
     "\n",
-    "Where $\\theta$ and $\\phi$ are real numbers. In this section we will cover _gates,_ the operations that change a qubit between these states."
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
     "## Contents    \n",
     "\n",
     "1. [The Pauli Gates](#pauli)    \n",
@@ -203,14 +196,12 @@
    ],
    "source": [
     "#We must first create a QuantumCircuit which we have done for you.\n",
-    "#Do not modify the following line\n",
     "qc = QuantumCircuit(1)\n",
     "#-------------------------------------------------------------\n",
     "#Implement your code here\n",
     "qc.x(0)\n",
     "#-------------------------------------------------------------\n",
     "#The following line prints out the circuit which we have done for you.\n",
-    "#Do not modify the following line\n",
     "qc.draw('mpl')\n"
    ]
   },
@@ -239,8 +230,8 @@
     }
    ],
    "source": [
-    "# Do not modify\n",
     "# Let's see the result\n",
+    "#No not modify\n",
     "out = execute(qc,backend).result().get_statevector()\n",
     "plot_bloch_multivector(out)"
    ]
@@ -301,7 +292,6 @@
     "qc.x(0)\n",
     "#-------------------------------------------------------------\n",
     "#The following line prints out the circuit which we have done for you.\n",
-    "#Do not modify the following line\n",
     "qc.draw('mpl')"
    ]
   },
@@ -330,7 +320,6 @@
     }
    ],
    "source": [
-    "#Do not modify\n",
     "# Let's see the result\n",
     "out = execute(qc,backend).result().get_statevector()\n",
     "plot_bloch_multivector(out)"
@@ -388,14 +377,12 @@
    ],
    "source": [
     "#We must first create a QuantumCircuit which we have done for you.\n",
-    "#Do not modify the following line\n",
     "qc = QuantumCircuit(1)\n",
     "#-------------------------------------------------------------\n",
     "#Implement your code here\n",
     "qc.y(0)\n",
     "#-------------------------------------------------------------\n",
     "#The following line prints out the circuit which we have done for you.\n",
-    "#Do not modify the following line\n",
     "qc.draw('mpl')\n"
    ]
   },
@@ -424,8 +411,8 @@
     }
    ],
    "source": [
-    "#Do not modify\n",
     "# Let's see the result\n",
+    "#No not modify\n",
     "out = execute(qc,backend).result().get_statevector()\n",
     "plot_bloch_multivector(out)"
    ]
@@ -492,14 +479,12 @@
    ],
    "source": [
     "#We must first create a QuantumCircuit which we have done for you.\n",
-    "#Do not modify the following line\n",
     "qc = QuantumCircuit(1)\n",
     "#-------------------------------------------------------------\n",
     "#Implement your code here\n",
     "qc.z(0)\n",
     "#-------------------------------------------------------------\n",
     "#The following line prints out the circuit which we have done for you.\n",
-    "#Do not modify the following line\n",
     "qc.draw('mpl')\n"
    ]
   },
@@ -528,8 +513,8 @@
     }
    ],
    "source": [
-    "# Do not modify\n",
     "# Let's see the result\n",
+    "#No not modify\n",
     "out = execute(qc,backend).result().get_statevector()\n",
     "plot_bloch_multivector(out)"
    ]
@@ -579,7 +564,6 @@
    ],
    "source": [
     "#We must first create a QuantumCircuit which we have done for you.\n",
-    "#Do not modify the following line\n",
     "qc = QuantumCircuit(1)\n",
     "#-------------------------------------------------------------\n",
     "#Implement your code here\n",
@@ -587,7 +571,6 @@
     "qc.z(0)\n",
     "#-------------------------------------------------------------\n",
     "#The following line prints out the circuit which we have done for you.\n",
-    "#Do not modify the following line\n",
     "qc.draw('mpl')"
    ]
   },
@@ -609,8 +592,8 @@
     }
    ],
    "source": [
-    "#Do not modify\n",
     "# Let's see the result\n",
+    "#No not modify\n",
     "out = execute(qc,backend).result().get_statevector()\n",
     "plot_bloch_multivector(out)"
    ]
@@ -679,14 +662,12 @@
    ],
    "source": [
     "#We must first create a QuantumCircuit which we have done for you.\n",
-    "#Do not modify the following line\n",
     "qc = QuantumCircuit(1)\n",
     "#-------------------------------------------------------------\n",
     "#Implement your code here\n",
     "qc.id(0)\n",
     "#-------------------------------------------------------------\n",
     "#The following line prints out the circuit which we have done for you.\n",
-    "#Do not modify the following line\n",
     "qc.draw('mpl')\n"
    ]
   },
@@ -715,8 +696,8 @@
     }
    ],
    "source": [
-    "# Do not modify\n",
     "# Let's see the result\n",
+    "#No not modify\n",
     "out = execute(qc,backend).result().get_statevector()\n",
     "plot_bloch_multivector(out)"
    ]
@@ -747,7 +728,6 @@
    ],
    "source": [
     "#We must first create a QuantumCircuit which we have done for you.\n",
-    "#Do not modify the following line\n",
     "qc = QuantumCircuit(1)\n",
     "#-------------------------------------------------------------\n",
     "#Implement your code here\n",
@@ -755,7 +735,6 @@
     "qc.id(0)\n",
     "#-------------------------------------------------------------\n",
     "#The following line prints out the circuit which we have done for you.\n",
-    "#Do not modify the following line\n",
     "qc.draw('mpl')"
    ]
   },
@@ -777,8 +756,8 @@
     }
    ],
    "source": [
-    "# Do not modify\n",
     "# Let's see the result\n",
+    "#No not modify\n",
     "out = execute(qc,backend).result().get_statevector()\n",
     "plot_bloch_multivector(out)"
    ]
@@ -840,14 +819,12 @@
    ],
    "source": [
     "#We must first create a QuantumCircuit which we have done for you.\n",
-    "#Do not modify the following line\n",
     "qc = QuantumCircuit(1)\n",
     "#-------------------------------------------------------------\n",
     "#Implement your code here\n",
     "qc.h(0)\n",
     "#-------------------------------------------------------------\n",
     "#The following line prints out the circuit which we have done for you.\n",
-    "#Do not modify the following line\n",
     "qc.draw('mpl')"
    ]
   },
@@ -869,7 +846,6 @@
     }
    ],
    "source": [
-    "#Do not modify\n",
     "# Let's see the result\n",
     "out = execute(qc,backend).result().get_statevector()\n",
     "plot_bloch_multivector(out)"
@@ -910,7 +886,6 @@
    ],
    "source": [
     "#We must first create a QuantumCircuit which we have done for you.\n",
-    "#Do not modify the following line\n",
     "qc = QuantumCircuit(1)\n",
     "#-------------------------------------------------------------\n",
     "#Implement your code here\n",
@@ -918,7 +893,6 @@
     "qc.h(0)\n",
     "#-------------------------------------------------------------\n",
     "#The following line prints out the circuit which we have done for you.\n",
-    "#Do not modify the following line\n",
     "qc.draw('mpl')"
    ]
   },
@@ -942,7 +916,6 @@
     }
    ],
    "source": [
-    "# Do not modify\n",
     "# Let's see the result\n",
     "out = execute(qc,backend).result().get_statevector()\n",
     "plot_bloch_multivector(out)"
@@ -1014,7 +987,7 @@
     }
    ],
    "source": [
-    "#Do not modify\n",
+    "#No not modify\n",
     "qc = QuantumCircuit(1)\n",
     "# Let's see the result\n",
     "out = execute(qc,backend).result().get_statevector()\n",
@@ -1050,12 +1023,9 @@
     }
    ],
    "source": [
-    "#-------------------------------------------------------------\n",
-    "#Implement your code here\n",
+    "#Implement some gate that takes you off the z-axis\n",
     "qc.h(0)   # Apply H-gate as you must get the state off the Z-axis.\n",
     "qc.s(0)   # Now you can apply the S-gate to a qubit in a superposition state.\n",
-    "#-------------------------------------------------------------\n",
-    "#Do not modify the following line\n",
     "qc.draw('mpl')"
    ]
   },
@@ -1077,7 +1047,7 @@
     }
    ],
    "source": [
-    "#Do not modify\n",
+    "#No not modify\n",
     "# Let's see the result\n",
     "out = execute(qc,backend).result().get_statevector()\n",
     "plot_bloch_multivector(out)"
@@ -1100,7 +1070,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "<p style=\"font-size: 16px;color:green\">The X, Y, Z are all of there own inverses (or reverse if you like) which makes sense since they all rotate the state vector by $180^\\circ$ or $\\pi$ radian about an axis. The Hadamard gate too is its own inverse (take my word for it, but you can always do the math). The S gate (and the following T gate) are not their own inverses so, we need new gates to reverse their action (or inverses in linear algebra lingo). These are commonly donated with a \"dagger\" as in $S^\\dagger$. So applying the $S^\\dagger$ (hint: called sdg or tdg in Qiskit - it does pay to read all the instructions) to an S gate reverses the action of the S-gate (mathematically - $SS^\\dagger = I$)."
+    "<p style=\"font-size: 16px;color:green\">The X, Y, Z are all of there own inverses (or reverse if you like) which makes sense since they all rotate the state vector by $180^\\circ$ or $\\pi$ radian about an axis. The Hadamard gate too is its own inverse (take my word for it, but you can always do the math). The S gate (and the following T gate) are not their own inverses so, we need new gates to reverse their action (or inverses in linear algebra lingo). These are commonly donated with a \"dagger\" as in $S^\\dagger$. So applying the $S^\\dagger$ (hint: called sdg or tdg in Qiskit - it does pay to read all the instructions) to an S gate reverses the action of the S-gate (mathematically - $SS^\\dagger = I)."
    ]
   },
   {
@@ -1132,11 +1102,7 @@
     }
    ],
    "source": [
-    "#-------------------------------------------------------------\n",
-    "#Implement your code here\n",
     "qc.sdg(0) # Apply Sdg-gate to qubit 0\n",
-    "#-------------------------------------------------------------\n",
-    "#Do not modify the following line\n",
     "qc.draw('mpl')"
    ]
   },
@@ -1158,7 +1124,7 @@
     }
    ],
    "source": [
-    "#Do not modify\n",
+    "#No not modify\n",
     "# Let's see the result\n",
     "out = execute(qc,backend).result().get_statevector()\n",
     "plot_bloch_multivector(out)"
@@ -1187,7 +1153,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 26,
+   "execution_count": 30,
    "metadata": {
     "scrolled": true
    },
@@ -1199,26 +1165,21 @@
        "<Figure size 233.576x84.28 with 1 Axes>"
       ]
      },
-     "execution_count": 26,
+     "execution_count": 30,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "#Do not modify the following line\n",
     "qc = QuantumCircuit(1)\n",
-    "#-------------------------------------------------------------\n",
-    "#Implement your code here\n",
     "qc.t(0)   # Apply T-gate to qubit 0\n",
     "qc.tdg(0) # Apply Tdg-gate to qubit 0\n",
-    "#-------------------------------------------------------------\n",
-    "#Do not modify the following line\n",
     "qc.draw('mpl')"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 27,
+   "execution_count": 31,
    "metadata": {},
    "outputs": [
     {
@@ -1228,13 +1189,13 @@
        "<Figure size 288x288 with 1 Axes>"
       ]
      },
-     "execution_count": 27,
+     "execution_count": 31,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "#Do not modify\n",
+    "#No not modify\n",
     "# Let's see the result\n",
     "out = execute(qc,backend).result().get_statevector()\n",
     "plot_bloch_multivector(out)"
@@ -1306,7 +1267,7 @@
     {
      "data": {
       "application/vnd.jupyter.widget-view+json": {
-       "model_id": "c6ac273b4e604a03b49254f29b2eedec",
+       "model_id": "9abe7453bf304ef69a1f50cb3dacd53f",
        "version_major": 2,
        "version_minor": 0
       },
@@ -1320,7 +1281,7 @@
     {
      "data": {
       "application/vnd.jupyter.widget-view+json": {
-       "model_id": "6f16b3a4763f4945aedfdb8ed92c9ec9",
+       "model_id": "da06112a71f64da9ae9d9a0f1fd4f63a",
        "version_major": 2,
        "version_minor": 0
       },
@@ -1398,10 +1359,10 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "So for those of you who aren't completely brain dead by this point, we would be remiss if we didn't, at least briefly, mention Schrödinger’s equation. Just like Newton's famous $F = ma = m\\frac{d^2x}{dx^2}$ equation which describes the motion of particles in the macroworld, the Schrödinger’s equation cronicles motion in the micro (quantum) world. The one dimensional, non-relativistic, Schrödinger equation is:\n",
+    "So for those of you who aren't complete brain dead by this point, we would be remiss if we didn't, at least briefly, mention Schrödinger’s equation. Just like Newton's famous $F = ma = m\\frac{d^2x}{dx^2}$ equation which cronicle the motion particles in the macroworld. The Schrödinger’s equation cronicles motion in the quantum world. The one dimensional, non-relativistic, Schrödinger equation is:\n",
     "$$i\\hbar\\frac{\\partial\\Psi}{\\partial t} = -\\frac{\\hbar}{2m}\\frac{\\partial^2\\Psi}{\\partial x^2} + V(x,t)\\Psi$$\n",
     "\n",
-    "The key take away from this is that it is a wave equation and waves can interfere constructively or destructively. I liken quantum computers to giant wave machines where qubits generate waves that can interfere constructively or destructively in some useful fashion for computation. \"Useful\" being the challenge.\n"
+    "The key take away from this is that it is a wave equation and waves can interfere constructively or destructively. I liken quantum computers to giant wave machines where qubits generate waves that can interfere constructively or destructively in some useful form of computation. Useful being the challenge.\n"
    ]
   },
   {

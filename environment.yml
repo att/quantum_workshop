@@ -10,3 +10,4 @@ dependencies:
   - git+https://github.com/qiskit-community/qiskit-textbook.git#subdirectory=qiskit-textbook-src
   - numexpr
   - pylatexenc
+  - seaborn
